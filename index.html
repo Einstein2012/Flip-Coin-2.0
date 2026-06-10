@@ -455,6 +455,13 @@
       updateHistory();
       updateStats();
     });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.code === 'Space' || e.key === ' ') {
+        e.preventDefault();
+        flipBtn.click();
+      }
+    });
   </script>
 </body>
 </html>
